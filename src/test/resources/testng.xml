@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="D:\selenium\untitled">
+        <classes>
+            <class name="tests.smartTv.SmartTvTest"></class>
+            <class name="tests.smartTv.AddInBucket"></class>
+            <class name="tests.login.WrongLogin"></class>
+            <class name="tests.login.Login"></class>
+            <class name="tests.search.Search"></class>
+            <class name="tests.search.WrongSearch"></class>
+        </classes>
+    </test>
+</suite>
