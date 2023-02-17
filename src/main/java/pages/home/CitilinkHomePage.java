@@ -20,15 +20,25 @@ public class CitilinkHomePage extends BasePage {
 
     By catalog = By.xpath("//*[@id=\"__next\"]/div/div[3]/div/div[2]/div/div/div[1]/div/button");
     By tv = By.xpath("/html/body/div[5]/div/div/div/div/div[2]/div/div/div/div[5]/div/div/div/div/div/div/div[1]/div/a[3]/div/span");
+    By phone = By.xpath("/html/body/div[5]/div/div/div/div/div[2]/div/div/div/div[5]/div/div/div/div/div/div/div[1]/div/a[1]");
+    By smartPhone = By.xpath("//*[@id=\"__next\"]/div/main/div[1]/div/div[2]/section/section[2]/div/a[1]");
     By smartTv = By.xpath("//*[@id=\"__next\"]/div/main/div[1]/div/div[2]/aside/div/div/div[1]/ul/li[2]/a");
     By login = By.xpath("//*[@id=\"__next\"]/div/div[3]/div/div[2]/div/div/div[2]/div[2]/div[1]/div");
     By search = By.xpath("//*[@id=\"__next\"]/div/div[3]/div/div[2]/div/div/div[2]/div[1]/form/div/div/label/input");
     By buttonSearch = By.xpath("/html/body/div[2]/div/div[3]/div/div[2]/div/div/div[2]/div[1]/form/div/div/label/div/div/button[2]");
+    By buttonWish = By.xpath("//*[@id=\"__next\"]/div/div[3]/div/div[2]/div/div/div[2]/div[2]/a[1]");
 
     public CitilinkHomePage pressCatalog() {
         driver.findElement(catalog).click();
         driver.findElement(tv).click();
         driver.findElement(smartTv).click();
+        return this;
+    }
+
+    public CitilinkHomePage pressCatalogPhone() {
+        driver.findElement(catalog).click();
+        driver.findElement(phone).click();
+        driver.findElement(smartPhone).click();
         return this;
     }
 
@@ -55,4 +65,8 @@ public class CitilinkHomePage extends BasePage {
         return this;
     }
 
+    public CitilinkHomePage pressWish() {
+        driver.findElement(buttonWish).click();
+        return this;
+    }
 }

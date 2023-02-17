@@ -8,6 +8,7 @@ import pages.base.BasePage;
 import pages.home.CitilinkHomePage;
 import pages.listing.CitilinkListingPage;
 import pages.login.CitilinkLoginPage;
+import pages.wish.CitilinkWishPage;
 import tests.CustomListener;
 @Listeners(CustomListener.class)
 public class BaseTest {
@@ -16,11 +17,12 @@ public class BaseTest {
     protected CitilinkHomePage citilinkHomePage = new CitilinkHomePage(driver);
     protected CitilinkListingPage citilinkListingPage = new CitilinkListingPage(driver);
     protected CitilinkLoginPage citilinkLoginPage = new CitilinkLoginPage(driver);
+    protected CitilinkWishPage citilinkWishPage = new CitilinkWishPage(driver);
 
-        @AfterSuite(alwaysRun = true)
-    public void close() {
-        driver.quit();
-    }
+//        @AfterSuite(alwaysRun = true)
+//    public void close() {
+//        driver.quit();
+//    }
 
 //    @AfterClass(alwaysRun = true)
 //    public void close() {
