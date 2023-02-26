@@ -5,7 +5,9 @@ import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.Listeners;
 import pages.base.BasePage;
+import pages.home.CitilinkCitiPage;
 import pages.home.CitilinkHomePage;
+import pages.home.CitilinkSearchPage;
 import pages.listing.CitilinkListingPage;
 import pages.login.CitilinkLoginPage;
 import pages.wish.CitilinkWishPage;
@@ -18,6 +20,8 @@ public class BaseTest {
     protected CitilinkListingPage citilinkListingPage = new CitilinkListingPage(driver);
     protected CitilinkLoginPage citilinkLoginPage = new CitilinkLoginPage(driver);
     protected CitilinkWishPage citilinkWishPage = new CitilinkWishPage(driver);
+    protected CitilinkSearchPage citilinkSearchPage = new CitilinkSearchPage(driver);
+    protected CitilinkCitiPage citilinkCitiPage = new CitilinkCitiPage(driver);
 
 //        @AfterSuite(alwaysRun = true)
 //    public void close() {

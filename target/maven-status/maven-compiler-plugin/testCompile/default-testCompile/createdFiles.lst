@@ -1,0 +1,14 @@
+tests\restAssured\Post.class
+tests\smartTv\AddInBucket.class
+tests\city\equalsCityAndNumber.class
+tests\favourites\FavouritesAndBucket.class
+tests\CustomListener.class
+tests\search\WrongSearch.class
+tests\restAssured\Get.class
+tests\login\WrongLogin.class
+tests\search\SearchProduct.class
+tests\base\BaseTest.class
+tests\smartTv\SmartTvTest.class
+tests\login\Login.class
+tests\restAssured\Put.class
+tests\search\Search.class
