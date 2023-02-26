@@ -1,10 +1,7 @@
 package tests.favourites;
 
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 import tests.base.BaseTest;
-
-import java.time.Duration;
 
 public class FavouritesAndBucket extends BaseTest {
     @Test
@@ -16,6 +13,6 @@ public class FavouritesAndBucket extends BaseTest {
         citilinkListingPage.addToFavourites();
         citilinkHomePage.pressWish();
         citilinkWishPage.pressAddToBucket();
-        citilinkWishPage.pressClose();
+//        citilinkWishPage.pressClose();
     }
 }
